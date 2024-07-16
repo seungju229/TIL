@@ -129,7 +129,7 @@ print(my_dict['apple'])
 
 - and
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1a5b2bca-9c7c-4a9d-b553-9a8142d9c9ac/70460c74-56c4-4dd8-8606-e187486f8c21/Untitled.png)
+![dog-8198719_640](https://github.com/user-attachments/assets/da662b36-533b-4315-9d08-a97886022dbb)
 
 ## 단축평가
 
