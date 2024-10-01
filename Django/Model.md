@@ -32,10 +32,10 @@
 
 ### 주요 필드 유형
 
-- CharField()
+- `CharField()`
     - 제한된 길이의 문자열 저장
     - 필드의 최대 길이를 결정하는 max_length는 필수 옵션
-- TextField()
+- `TextField()`
     - 길이 제한이 없는 대용량 텍스트를 저장
     - 무한대는 아니며 사용하는 시스템에 따라 달라짐
 
@@ -95,10 +95,10 @@ class Article(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 ```
 
-- auto_now
+- `auto_now`
     - 데이터가 저장될 때마다 자동으로 현재 날짜 시간을 저장
     - 수정한 날짜
-- auto_now_add
+- `auto_now_add`
     - 데이터가 처음 생성될 때만 자동으로 현재 날짜 시간을 저장
     - 작성한 날짜
 

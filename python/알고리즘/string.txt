@@ -1,0 +1,27 @@
+target = "Hello SSAFY 12th!"
+pattern = "SSA"
+
+
+def BrutForce(pat, txt):
+    N = len(txt)
+    M = len(pat)
+    i = 0  # txt의 인덱스
+    j = 0  # pat의 인덱스
+
+    # 틀린 곳을 발견했다면, 인덱스 값 초기화
+    while j < M and i < N:  # 일치하는 패턴을 만나면 탈출해야 하는데, 등호가 있으면 index error 발생. 왜냐면 M = 3일때 j <=3 이 되는데, j는 인덱스 3번이 없음
+        if txt[i] != pat[j]:
+            i = i - j
+            j = -1
+
+        i = i + 1  # 맞고 틀리고 상관 없이 i = i + 1 , j = j + 1
+        j = j + 1
+
+    if j == M:
+        return i - M
+    else:
+        return -1
+
+
+result = BrutForce(pattern, target)
+print(result)
